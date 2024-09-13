@@ -5,7 +5,7 @@ date:   	2024-09-12 02:00:00
 category: 	business
 permalink: 	/dca-fire-pivot/
 excerpt:	I blew it. I made a classic tech founder mistake. Here are the lessons, and hopefully the fix.
-xlink:	https://x.com/klos/status/790452878917926914
+xlink:	https://x.com/klos/status/1834450291577508065
 ---
 
 I blew it. I made a classic tech founder mistake.

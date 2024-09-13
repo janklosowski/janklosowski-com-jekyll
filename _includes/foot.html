@@ -1,6 +1,4 @@
-  <img class="darkmode-switch" onclick="console.log(darkMode())" src="/img/darkmode.svg" alt="Dark/Light">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60645901-4"></script>
 
@@ -10,25 +8,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-60645901-4');
-
-
-
-    if (typeof(Storage) !== 'undefined') {
-      if (localStorage.getItem('mode') == 'dark') {
-        document.querySelector('html').classList.add('darkmode');
-      }
-      function darkMode() {
-        if (localStorage.getItem('mode') == 'light') {
-          localStorage.setItem('mode', 'dark');
-          document.querySelector('html').classList.add('darkmode');
-        } else {
-          localStorage.setItem('mode', 'light');
-          document.querySelector('html').classList.remove('darkmode');
-        }
-        return localStorage.getItem('mode');
-      }
-    }
-
 
   </script>
 </html>

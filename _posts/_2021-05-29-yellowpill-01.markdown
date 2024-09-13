@@ -1,0 +1,9 @@
+---
+layout: 	    redirect
+title:  	    "<span class=material-icons>volume_up</span> Yellow Pill #1 | Od designera do biznesu. Indie Hackers. &#8629;"
+date:   	    2021-05-29 20:00:00
+category: 	  pl
+permalink:    /maxi-01/
+redirect_url: https://anchor.fm/laissezfairepl/episodes/MAXI-01--Jan-Kosowski-Deltabadger-com-Za-bitcoinowy-biznes--nie-bj-si-pogardy-ani-braku-funduszy--Czym-jest-grosz-cost-averaging--kim-jest-Satoshi-Nakamoto-e11q6p6
+excerpt:	    ""
+---

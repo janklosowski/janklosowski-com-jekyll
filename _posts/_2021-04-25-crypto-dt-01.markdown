@@ -1,0 +1,9 @@
+---
+layout: 	    redirect
+title:  	    "<span class=material-icons>videocam</span> Crypto DT | Automated dollar-cost averaging into Bitcoin &#8629;"
+date:   	    2021-04-25 20:00:00
+category: 	  cryptocurrencies
+permalink:    /crypto-dt-01/
+redirect_url: https://www.youtube.com/watch?v=uxKCKBVsyHM
+excerpt:	    "Deltabadger, and automating dollar-cost averaging"
+---

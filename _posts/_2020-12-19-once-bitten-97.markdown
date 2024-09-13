@@ -1,0 +1,9 @@
+---
+layout: 	    redirect
+title:  	    "<span class=material-icons>volume_up</span> Once Bitten #97 | Daniel's daughter surprising question &#8629;"
+date:   	    2020-12-19 20:00:00
+category: 	  cryptocurrencies
+permalink:    /once-bitten-97/
+redirect_url: https://anchor.fm/daniel-prince6/episodes/klos---Fiat-Cost-Average-Down-To-The-Hour-On-Top-exchanges-With-deltabadgerapp---96-eo0tj5
+excerpt:	    "I've got surprised by Daniel's daughter question about Deltabadger!"
+---

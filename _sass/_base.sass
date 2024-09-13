@@ -1,8 +1,6 @@
-$link:       #c60c30
 $unit:       16px
 $lineheight: 1.5 * $unit
 $ratio:      1.61803398875
-$text:       #333
 
 @font-face
   font-family: 'Roboto Mono'
@@ -23,13 +21,37 @@ $text:       #333
   src: local('Roboto Mono Bold'), local('Roboto-Mono-Bold'), url(../fonts/RobotoMonoBold.woff) format('woff')
   font-display: swap
 
+@media (prefers-color-scheme: light)
+  html
+    --background: #fff
+    --text: #222
+    --faded: #aaa
+    --link: color(display-p3 0.85 0 0)
+    --button: #000
+
+@media (prefers-color-scheme: dark)
+  html
+    --background: #000
+    --text: #ddd
+    --faded: #555
+    --link: color(display-p3 0.85 0 0)
+    --button: #fff
+  .side--mask--1
+    filter: invert(1) !important
+  .ux-at
+    img
+      filter: invert(1) !important
+html
+  
+  color: var(--text)
+  background: var(--background)
 *
   margin:  0
   padding: 0
   border:  none
 
 a
-  color:           $link
+  color:           var(--link)
   text-decoration: none
 
 sur
@@ -41,43 +63,16 @@ sur
 sup
   margin-right: 2px
 
-img
-  max-width: 100%
-
 figure
   position:   relative
   text-align: center
   img
     margin-bottom: 0
 
-html
-  color: $text
-  background: #fff
-
-.darkmode
-  background: #111
-  a, time, img:not(.darkmode-switch), .side--image
-    filter: invert(1)
-  body
-    filter:     invert(1)
-    background: #eee
-.darkmode-switch
-  z-index:  1000
-  position: absolute
-  top:      2.7rem
-  right:    2.7rem
-  cursor:   pointer
-  width:    1.5rem
-  height:   1.5rem
-
 @media only screen and (max-width: 899px)
-  .darkmode-switch
-    width: 1rem
-    height: 1rem
-    top: 1rem
-    right: 1rem
   .ux-at
     display: none
+  
 body
 p, ol, ul, h1, h2, h3, h4,
 img, video, pre, code, figure,
@@ -102,23 +97,48 @@ pre,code,
   z-index:   1
   margin:    0 auto
 
+.home
+  display: flex
+  flex-direction: column
+  gap: 3rem
 .header
-  display: block
+  display: flex
+  flex-direction: column
+  gap: 4rem
+  *
+    margin-bottom: 0
+  @media only screen and (max-width: 575px)
+    display: none
+
+.button
+  background: var(--button)
+  color:     var(--background)
+  padding:   0.7rem 1.5rem 0.8rem
+  border-radius: 2rem
+
 
 .aboutme
   font-weight: normal
 
 .ux-at
-  padding: 40px 0 30px 10px
+  display: flex
+  gap: 4rem
+  align-items: flex-end
   a
-    padding-right: 60px
-    &:last-child
-      padding-right: 0
-    &:first-child
-      padding-right: 50px
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    gap: 2rem
+    color: var(--faded)
   img
     height:  3rem
     display: inline-block
+    margin: 0
+  span
+    font-size: 1.5rem
+    color: var(--faded)
+    position: relative
+    top: -0.125rem
 .postlink
   margin-bottom: 1rem
   display: block
@@ -126,7 +146,7 @@ pre,code,
     .postlink__title__arrow
       opacity: 1
     .postlink__time
-      color: $text
+      color: var(--text)
   .material-icons
     position: relative
     top:      7px
@@ -139,7 +159,7 @@ pre,code,
 .sociallinks,
 .postlink__time,
 .category__header
-  color:       $text
+  color:       var(--text)
   font-weight: normal
 .sociallinks
   line-height: 2rem

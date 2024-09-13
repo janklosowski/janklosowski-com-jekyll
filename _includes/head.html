@@ -1,37 +1,38 @@
 <!doctype html>
 <html prefix="og: http://ogp.me/ns#" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport"               content="width=device-width, initial-scale=1">
+        <meta name="description"            content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
-    <meta name="viewport"               content="width=device-width, initial-scale=1">
-    <meta name="description"            content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="{{ page.title | default: site.title }}">
+        <meta property="og:description"       content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <meta property="og:image"             content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/thumbnail.png{% endif %}">
+        <meta property="og:image:width"       content="1200">
+        <meta property="og:image:height"      content="630">
+        <meta property="og:url"               content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <meta property="og:site_name"         content="{{ site.title }}">
+        
+        <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="{{ page.title | default: site.title }}">
-    <meta property="og:description"       content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:image"             content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/thumbnail.png{% endif %}">
-    <meta property="og:image:width"       content="1200">
-    <meta property="og:image:height"      content="630">
-    <meta property="og:url"               content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:site_name"         content="{{ site.title }}">
-    
-    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+        <!-- Twitter Cards -->
+        <meta name="twitter:card"             content="summary_large_image">
+        <meta name="twitter:title"            content="{{ page.title | default: site.title }}">
+        <meta name="twitter:description"      content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="twitter:image"            content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/thumbnail.png{% endif %}">
+        <meta name="twitter:image:alt"        content="{{ page.title | default: site.title }}">
+        <meta name="twitter:site"             content="@klos">
+        <meta name="twitter:creator"          content="@klos">
 
-    <!-- Twitter Cards -->
-    <meta name="twitter:card"             content="summary_large_image">
-    <meta name="twitter:title"            content="{{ page.title | default: site.title }}">
-    <meta name="twitter:description"      content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image"            content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/thumbnail.png{% endif %}">
-    <meta name="twitter:image:alt"        content="{{ page.title | default: site.title }}">
-    <meta name="twitter:site"             content="@klos">
-    <meta name="twitter:creator"          content="@klos">
+        <title>{{ page.title | default: site.title }}</title>
 
-    <title>{{ page.title | default: site.title }}</title>
-
-    <!-- Other Links -->
-    <link rel="stylesheet"    href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet"    href="{{ '/css/main.css' | prepend: site.baseurl }}">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
-    <link rel="canonical"     href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate"     href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }}">
-</html>
+        <!-- Other Links -->
+        <link rel="stylesheet"    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet"    href="{{ '/css/main.css' | prepend: site.baseurl }}">
+        <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+        <link rel="canonical"     href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="alternate"     href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }}">
+    </head>
+    <body>

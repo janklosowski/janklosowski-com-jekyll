@@ -5,7 +5,6 @@ date:   	2024-09-12 02:00:00
 category: 	business
 permalink: 	/from-dca-to-fire/
 excerpt:	I blew it. I made a classic tech founder mistake. Here are the lessons, and hopefully the fix.
-thumblink:	/img/fire.jpg
 xlink:	https://x.com/klos/status/790452878917926914
 ---
 

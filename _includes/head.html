@@ -6,35 +6,31 @@
     <meta name="description"            content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Open Graph Tags -->
-    <meta property="og:title"             content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
     <meta property="og:description"       content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:image"             content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/facebook.png{% endif %}">
+    <meta property="og:image"             content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/thumbnail.png{% endif %}">
     <meta property="og:image:width"       content="1200">
     <meta property="og:image:height"      content="630">
     <meta property="og:url"               content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:site_name"         content="{{ site.title }}">
     
-    {% if page.layout == "post" %}
-        <meta property="og:type" content="article">
-    {% else %}
-        <meta property="og:type" content="website">
-    {% endif %}
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card"             content="summary_large_image">
-    <meta name="twitter:title"            content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:title"            content="{{ page.title | default: site.title }}">
     <meta name="twitter:description"      content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image"            content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/facebook.png{% endif %}">
-    <meta name="twitter:image:alt"        content="{% if page.image_alt %}{{ page.image_alt }}{% else %}A description of the image on the page{% endif %}">
+    <meta name="twitter:image"            content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/thumbnail.webp{% endif %}">
+    <meta name="twitter:image:alt"        content="{{ page.title | default: site.title }}">
     <meta name="twitter:site"             content="@klos">
     <meta name="twitter:creator"          content="@klos">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ page.title | default: site.title }}</title>
 
     <!-- Other Links -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet"    href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet"    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"    href="{{ '/css/main.css' | prepend: site.baseurl }}">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
     <link rel="canonical"     href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate"     href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }}">
+    <link rel="alternate"     href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }}">
 </html>

@@ -4,7 +4,7 @@ title:  	 "Go home ICO. You're drunk."
 date:   	 2017-05-27 01:01:01
 category:    cryptocurrencies
 permalink:   /go-home-ico/
-excerpt:	 When you analyze a lot why users leave a flow without doing actions you expected them to do, you may agree that taking any action is preceded by a mental struggle. The best interface is what Brenda Laurel calls NFI – “no fucking interface”. You give users what they want immediately as they approach.
+excerpt:	 I recognize the demand for new funding and investment mechanisms, and I’m quite excited about cryptocurrencies in general. That said, the initial coin offering (ICO), in the current form, is a terrible investment model that cannot work and will make more people bankrupts than millionaires.
 ---
 
 I recognize the demand for new funding and investment mechanisms, and I’m quite excited about cryptocurrencies in general. That said, the initial coin offering (ICO), in the current form, is a terrible investment model that cannot work and will make more people bankrupts than millionaires.
@@ -30,7 +30,3 @@ Besides that, the whole model is entirely unproven. The only token-based project
 If it’s so wrong and evident, where does the money come from? Who invests in those projects? The bitter answer is people with no knowledge about investing, to some degree financially excluded, with no easy access to traditional markets — largely: teenagers. Those people will finance this next bubble in a similar way that small retail investors did it during the dot-com bubble in 2001.
 
 This coming event is inevitable. Will it have at least some educational value? It’s hard to say. It seems like there is, and always has been, a market for bad investments and this one is significantly harder to regulate. What I don’t believe in is an opportunity for any of those mainstream ICOs to become the next big thing.
-
-[Leave a comment on Medium →][medium]
-
-[medium]:	https://medium.com/@klos/go-home-ico-youre-drunk-cfe39b878b34

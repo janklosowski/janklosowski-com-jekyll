@@ -31,7 +31,7 @@ When it comes to picking your "postman", let me share my experience:
 
 If you need a business email that integrates with services like Zapier and Pipedrive—just go for Google Workspace. Your privacy is already compromised by connecting to third-party services, so at least make your life easier. I hired ProtonMail for that job for over 4 years, and all I can say: it's a lot of extra hustle.
 
-For a long time, I recommended ProtonMail to everyone who asked. If encryption is your priority—go for it. If you plan to use it as anonymous/vanity address — even better. Unfortunately, despite the noble idea behind it, the quality of customer service suffers from bad corporate culture and it not sufficient for serious purposes. They don’t work on weekends, reply slowly, and it took weeks (!!!) of fighting until they restored access to my business mailboxes, lost due to an error on their payment page (the error was still there when I left). That’s way too much trouble to easily recommend them for serious users. 
+For a long time, I recommended ProtonMail to everyone who asked. If encryption is your priority—go for it. If you plan to use it as anonymous/vanity address — even better. Unfortunately, despite the noble idea behind it, the quality of customer service suffers from bad corporate culture and is not sufficient for serious purposes. They don’t work on weekends, reply slowly, and it took weeks (!!!) of fighting until they restored access to my business mailboxes, lost due to an error on their payment page (the error was still there when I left). That’s way too much trouble to easily recommend them for serious users. 
 
 **Tip: Download your emails locally.**
 

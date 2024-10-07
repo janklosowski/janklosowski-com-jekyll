@@ -37,4 +37,4 @@ For a long time, I recommended ProtonMail to everyone who asked. If encryption i
 
 After the whole drama, for my private address, I eventually settled on iCloud, and after a few weeks, I’m quite satisfied. First, I appreciate Apple’s focus on privacy. In that regard, I trust them much more than Google or Microsoft. Second, like surely many of the readers, I use an iPhone and already pay for iCloud, which includes this option for free. With my fresh bruises from the ProtonMail "adventure", I'm devoted to store my emails locally, so here comes the bonus point: I tried the default Mail app, and it was surprisingly sufficient without adding further bloat to my setup.
 
-**TL;DR: Sending email from your domain is more than just convenience — it’s about privacy, trust, and, well… looking good. Also: download them, stupid.**
+**TL;DR: Sending email from your domain is more than just convenience — it’s about control, privacy, trust, and, well… looking good. Also: download them, stupid.**

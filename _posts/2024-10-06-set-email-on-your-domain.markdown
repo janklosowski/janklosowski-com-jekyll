@@ -11,7 +11,7 @@ Recently, I’ve experienced an upsetting [breakup with ProtonMail](https://x.co
 
 Where to start… I love email.
 
-It's a foundational protocol of the internet, older than the web, and my bet is: it will still be here when Facebook and Google Search no longer exist. So, get one—that’s for sure—and set it on your own domain. Yes, you need that too. Here are three reasons why:
+It's a foundational protocol of the internet, **20 years older than the web**, and my bet is: it will still be here when Facebook and Google Search no longer exist. So, get one—that’s for sure—and set it on your own domain. Yes, you need that too. Here are three reasons why:
 
 ## Independence
 Owning an address in your domain allows you to switch providers anytime during your lifetime. Maybe you want to try out some new cool service like Hey, have concerns with Google’s privacy policy, or ProtonMail delivered a nightmare experience of over a week with no access to your emails. No problem! Move your mailbox somewhere else in a few simple steps, and none of your recipients will even notice. I went through letting everyone know that I changed my email address once, and it took four years before I stopped receiving emails at the old one.

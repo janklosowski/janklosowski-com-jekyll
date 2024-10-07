@@ -4,7 +4,8 @@ title:  	"Download your emails"
 date:   	2024-10-07 01:00:00
 category: 	business
 permalink: 	/email-on-your-domain/
-excerpt:	Why and where you should set up email on your domain, and download your mailbox. Freshly, after a violent breakup with my previous email provider.
+excerpt:	Why and where you should set up email on your domain, and always download your mailbox locally. Post-ProtonMail drama notes and lessons.
+xlink: https://x.com/klos/status/1843352487950188713
 ---
 
 Recently, I’ve experienced an upsetting [breakup with ProtonMail](https://x.com/klos/status/1838812841467613334), and I’ve made some changes to how I handle my mailboxes. Over the years, I've gone on quite a journey as an email user. Here are some lessons that may be useful to you:

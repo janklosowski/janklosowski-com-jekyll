@@ -1,10 +1,10 @@
 ---
 layout: 	post
-title:  	"Set email on your domain"
+title:  	"Download your emails"
 date:   	2024-10-07 01:00:00
 category: 	business
 permalink: 	/email-on-your-domain/
-excerpt:	A few notes about why and where you should set up email on your domain. Freshly, after a violent breakup with my previous email provider.
+excerpt:	Why and where you should set up email on your domain, and download your mailbox. Freshly, after a violent breakup with my previous email provider.
 ---
 
 Recently, I’ve experienced an upsetting [breakup with ProtonMail](https://x.com/klos/status/1838812841467613334), and I’ve made some changes to how I handle my mailboxes. Over the years, I've gone on quite a journey as an email user. Here are some lessons that may be useful to you:
@@ -36,4 +36,4 @@ For a long time, I recommended ProtonMail to everyone who asked. If encryption i
 
 After the whole drama, for my private address, I eventually settled on iCloud, and after a few weeks, I’m quite satisfied. First, I appreciate Apple’s focus on privacy. In that regard, I trust them much more than Google or Microsoft. Second, like surely many of the readers, I use an iPhone and already pay for iCloud, which includes this option for free. With my fresh bruises from the ProtonMail "adventure", I'm devoted to store my emails locally, so here comes the bonus point: I tried the default Mail app, and it was surprisingly sufficient without adding further bloat to my setup.
 
-**TL;DR: Email on your domain is more than just convenience — it’s about privacy, trust, and, well… looking good. Also: download your emails, stupid.**
+**TL;DR: Sending email from your domain is more than just convenience — it’s about privacy, trust, and, well… looking good. Also: download them, stupid.**

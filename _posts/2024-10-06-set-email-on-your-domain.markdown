@@ -29,12 +29,14 @@ The worst outcome of writing from a generic domain is looking untrustworthy. Whe
 
 When it comes to picking your "postman", let me share my experience:
 
-If you need a business email that integrates with services like Zapier and Pipedrive—just go for Google Workspace. Your privacy is already compromised by connecting to third-party services, so at least make your life easier. I hired ProtonMail for that job for over 4 years, and all I can say: it's a lot of extra hustle.
+For a long time, I recommended ProtonMail to everyone who asked. If encryption is your priority — go for it. If you plan to use it as anonymous/vanity address — even better. Unfortunately, despite the noble idea behind it, the quality of customer service suffers from bad corporate culture and is not sufficient for serious purposes. They don’t work on weekends, reply slowly, and it took weeks (!!!) of fighting until they restored access to my business mailboxes, lost due to an error on their payment page (the error was still there when I left). That’s way too much trouble to easily recommend them for serious users. 
 
-For a long time, I recommended ProtonMail to everyone who asked. If encryption is your priority—go for it. If you plan to use it as anonymous/vanity address — even better. Unfortunately, despite the noble idea behind it, the quality of customer service suffers from bad corporate culture and is not sufficient for serious purposes. They don’t work on weekends, reply slowly, and it took weeks (!!!) of fighting until they restored access to my business mailboxes, lost due to an error on their payment page (the error was still there when I left). That’s way too much trouble to easily recommend them for serious users. 
-
-**Tip: Download your emails locally.**
+My big takeaway from this event is realysing how comfortable storing everything in the corporate cloud became. We forgot that having a single point of failure is never a good strategy. I can't even remember when I stopped downloading my emails locally. Why? It's not even that difficult. Simply connect your mailbox, a local client, and just make the f… backup.
 
 After the whole drama, for my private address, I eventually settled on iCloud, and after a few weeks, I’m quite satisfied. First, I appreciate Apple’s focus on privacy. In that regard, I trust them much more than Google or Microsoft. Second, like surely many of the readers, I use an iPhone and already pay for iCloud, which includes this option for free. With my fresh bruises from the ProtonMail "adventure", I'm devoted to store my emails locally, so here comes the bonus point: I tried the default Mail app, and it was surprisingly sufficient without adding further bloat to my setup.
 
-**TL;DR: Sending email from your domain is more than just convenience — it’s about control, privacy, trust, and, well… looking good. Also: download them, stupid.**
+And for your business… if you need to integrate your email with services like Zapier and Pipedrive—just go for Google Workspace. Your privacy is already compromised by connecting to third-party services, so at least make your life easier. I hired ProtonMail for that job for over 4 years, and all I can say: it's a lot of extra hustle.
+
+I may not be fully done. Fantasies about running my very own email server are back.
+
+**TL;DR: Sending email from your domain is more than just convenience — it’s about control, privacy, trust, and, well… looking good. Also: download them, stupid. Make a backup, and thank me later.**

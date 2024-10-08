@@ -32,8 +32,8 @@ Five years ago, I moved my private email from Google to ProtonMail. The main rea
 
 Unfortunately, what I painfully experienced, despite the noble idea behind it, is that the quality of customer service suffers from bad corporate culture and is not sufficient for serious purposes. They don’t work on weekends, reply slowly, and it took weeks (!!!) of fighting until they restored access to my business mailboxes, lost due to an error on their payment page (the error was still there when I left). That’s way too much trouble to easily recommend them for serious users. And it wasn't even the first time I reported a problem that wasn't fixed for months.
 
-## Lessons:
-My big takeaway from this event was realizing how important it is to have a backup of your mailbox. This is really the heart of many of my operations (as well as access to other services). I can't even remember when I stopped downloading my emails locally. I was traveling, using different devices, while the cloud got so reliable and convenient. But having a single point of failure is never a good strategy.
+## Backup
+My big takeaway from this event was realizing how important it is to have a backup of your mailbox. This is really the heart of many of my operations (as well as access to many services). I can't even remember when I stopped downloading my emails locally. I was traveling, using different devices, while the cloud got so reliable and convenient. But having a single point of failure is never a good strategy.
 
 It's simple: connect your mailbox to some local mail client, and let it store all your stuff locally — even if only as insurance.
 

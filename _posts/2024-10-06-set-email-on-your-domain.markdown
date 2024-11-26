@@ -41,4 +41,4 @@ In my case, after the whole Proton "adventure," for my private address, I settle
 
 And for business… if you need to integrate your email with services like Zapier and Pipedrive—just go for Google Workspace. Your privacy is already compromised by connecting to all the third-party services, so at least make your life easier. I hired ProtonMail for that job for over four years, and all I can say: it's a lot of extra hassle — make sure you really need it.
 
-I may not be fully done. Fantasies about running my very own email server are back.
+I may not be fully done. Fantasies about running my very own email server are back. 

@@ -50,7 +50,7 @@ If there’s one place where I diverge from typical FIRE/Boglehead advice, it’
 
 So, here’s what happens now: 
 
-The new Deltabadger is transitioning from a [DCA bot for crypto](https://deltabadger.com/crypto-dca/ "DCA crypto") to a platform offering tools and a community for financial freedom seekers. We’re going beyond crypto, focusing on building and rebalancing permenent portfolios and embracing the FIRE movement.
+The new Deltabadger is transitioning from a [DCA bot for crypto](https://deltabadger.com/dca-crypto/ "DCA crypto") to a platform offering tools and a community for financial freedom seekers. We’re going beyond crypto, focusing on building and rebalancing permenent portfolios and embracing the FIRE movement.
 
 Unlike other platforms, I don’t plan to exploit interest in flashy new assets. I’m much closer to the Bogleheads than I am to investing in meme coins. I see Bitcoin as a conservative macro asset now, and if you don’t have any in your long-term portfolio, you just live in the past.
 

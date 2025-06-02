@@ -5,7 +5,7 @@ date:   	2025-06-01 08:08:08
 category: 	business
 permalink: 	/better-than-dollar-coast-averaging/
 excerpt:	"After years of advocating for pure dollar-cost averaging, I've changed my mind. Here's why I now believe that the best investment strategy is not necessarily the most mathematically optimal one."
-tw-link:	https://twitter.com/klos/status/685894091532537856
+tw-link:	https://x.com/klos/status/1929426046362714563
 ---
 
 When I launched my [dollar-cost averaging bot](https://deltabadger.com/) in 2020, I was firmly convinced that DCA was the only strategy a retail investor needed to do great in the market. However, users quickly started asking me for various features going beyond this approach.

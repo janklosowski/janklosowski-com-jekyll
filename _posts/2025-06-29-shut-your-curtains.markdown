@@ -1,12 +1,12 @@
 ---
 layout: 	post
 title:  	"Shut Your Curtains"
-subtitle:   "How AI Kills the Open Internet"
+subtitle:   "How AI Ends Another Chapter of the Open Internet"
 date:   	2025-06-29 08:08:09
 category: 	business
 permalink: 	/ai-kills-open-internet/
 excerpt:	"Once upon a time, we all lived in one big digital cave, shared everything, and privacy was this weird concept that old people worried about. Today, like in the real world, curtains are one of the first things you buy for your digital apartment."
-xlink:	https://x.com/klos/status/1929426046362714563
+xlink:	https://x.com/klos/status/1939400594067755487
 ---
 *Remember when information wanted to be free? That was adorable.*
 

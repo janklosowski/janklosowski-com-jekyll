@@ -150,6 +150,9 @@ pre,code,
     align-items: center
     gap: 2rem
     color: var(--faded)
+    &:not(:first-child)
+      img
+        opacity: 0.33
   img
     height:  3rem
     display: inline-block
@@ -223,7 +226,7 @@ pre,code,
   position: fixed
 
 .side--image
-  background-image: url(../img/janklosowski01.jpg)
+  //background-image: url(../img/bg.jpeg)
   background-position: top center
   background-size: cover
   animation: show_image 500ms
@@ -241,7 +244,7 @@ pre,code,
 
 .side--mask--1
   background-image: url(../img/mask.svg)
-  background-size: 4px
+  background-size: 8px
 
 .comments
   padding-top: 2.2rem

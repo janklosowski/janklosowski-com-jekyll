@@ -8,7 +8,7 @@ excerpt:	"After years of advocating for pure dollar-cost averaging, I've changed
 xlink:	https://x.com/klos/status/1929426046362714563
 ---
 
-When I launched my [dollar-cost averaging bot](https://deltabadger.com/) in 2020, I was firmly convinced that DCA was the only strategy a retail investor needed to do great in the market. However, users quickly started asking me for various features going beyond this approach.
+When I launched my [DCA bot for crypto](https://deltabadger.com/) in 2020, I was firmly convinced that DCA was the only strategy a retail investor needed to do great in the market. However, users quickly started asking me for various features going beyond this approach.
 
 > I want to DCA more when RSI is below 30.
 

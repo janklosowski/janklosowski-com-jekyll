@@ -53,8 +53,7 @@ html
   border:  none
 
 a
-  color:           var(--link)
-  text-decoration: none
+  color:           var(--text)
 
 sur
   font-size:   1rem/$ratio
@@ -86,15 +85,11 @@ blockquote
     opacity: 0.125
     z-index: -1
     font-style: normal
-
-@media only screen and (max-width: 899px)
-  .ux-at
-    display: none
   
 body
 p, ol, ul, h1, h2, h3, h4,
 img, video, pre, code, figure,
-.post__time, .header, .category
+.post__time, .category
   margin-bottom: $ratio*1rem
 
 html,
@@ -108,26 +103,29 @@ pre,code,
   line-height: 1em * $ratio
 
 .page
-  padding:   2.7rem 3rem
+  padding:   1rem
   display:   block
-  max-width: 44rem
+  max-width: 31.3rem
   position:  relative
   z-index:   1
   margin:    0 auto
-
+  overflow-x: hidden
+  @media only screen and (min-width: 575px)
+    padding: 2rem 3rem
+.substack-post-embed,.twitter-tweet-rendered
+  margin: 0 !important
 .home
   display: flex
   flex-direction: column
-  gap: 3rem
+  gap: 2rem
+  @median only screen and (min-width: 575px)
+    gap: 2rem
 .header
   display: flex
   flex-direction: column
-  gap: 4rem
+  gap: 1rem
   *
     margin-bottom: 0
-  @media only screen and (max-width: 575px)
-    display: none
-
 .button
   background: var(--button)
   color:     var(--background)
@@ -142,8 +140,10 @@ pre,code,
 
 .ux-at
   display: flex
-  gap: 4rem
+  gap: 2rem
   align-items: flex-end
+  @media only screen and (min-width: 575px)
+    gap: 3.8rem
   a
     display: flex
     flex-direction: column-reverse
@@ -153,6 +153,14 @@ pre,code,
     &:not(:first-child)
       img
         opacity: 0.33
+    &+a
+      opacity: 1
+      &+a
+        opacity: 0.6
+        &+a
+          opacity: 0.5
+          &+a
+            opacity: 0.4
   img
     height:  3rem
     display: inline-block

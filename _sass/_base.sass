@@ -87,7 +87,7 @@ blockquote
     font-style: normal
   
 body
-p, ol, ul, h1, h2, h3, h4,
+p, ol, ul, h2, h3, h4,
 img, video, pre, code, figure,
 .post__time, .category
   margin-bottom: $ratio*1rem
@@ -117,26 +117,21 @@ pre,code,
 .home
   display: flex
   flex-direction: column
-  gap: 2rem
-  @median only screen and (min-width: 575px)
-    gap: 2rem
-.header
-  display: flex
-  flex-direction: column
   gap: 1rem
-  *
-    margin-bottom: 0
+  @media (min-width: 575px)
+    gap: 2rem
 .button
   background: var(--button)
-  color:     var(--background)
-  padding:   0.7rem 1.5rem 0.8rem
+  color: var(--background)
+  padding: 0.7rem 1.5rem 0.8rem
   border-radius: 2rem
-  display:      inline-block
+  display: inline-block
   margin: 2rem 0 10rem
 
 
 .aboutme
   font-weight: normal
+  font-weight: bold
 
 .ux-at
   display: flex
@@ -148,8 +143,9 @@ pre,code,
     display: flex
     flex-direction: column-reverse
     align-items: center
-    gap: 2rem
+    gap: 1rem
     color: var(--faded)
+    text-decoration: none
     &:not(:first-child)
       img
         opacity: 0.33

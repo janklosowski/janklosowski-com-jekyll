@@ -1,2 +1,51 @@
+    <script>
+        // Dark mode toggle functionality
+        (function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+            
+            // Check for saved theme preference or default to system preference
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            // Initialize theme
+            if (savedTheme === 'dark') {
+                html.classList.add('dark-mode');
+            } else if (savedTheme === 'light' || !savedTheme) {
+                html.classList.add('light-mode');
+            }
+            
+            // Toggle theme function
+            function toggleTheme() {
+                if (html.classList.contains('dark-mode')) {
+                    html.classList.remove('dark-mode');
+                    html.classList.add('light-mode');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    html.classList.remove('light-mode');
+                    html.classList.add('dark-mode');
+                    localStorage.setItem('theme', 'dark');
+                }
+            }
+            
+            // Add click event listener
+            if (themeToggle) {
+                themeToggle.addEventListener('click', toggleTheme);
+            }
+            
+            // Listen for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                if (!localStorage.getItem('theme')) {
+                    if (e.matches) {
+                        html.classList.remove('light-mode');
+                        html.classList.add('dark-mode');
+                    } else {
+                        html.classList.remove('dark-mode');
+                        html.classList.add('light-mode');
+                    }
+                }
+            });
+        })();
+    </script>
   </body>
 </html>

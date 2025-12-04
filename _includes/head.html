@@ -26,6 +26,43 @@
         <meta name="twitter:site"             content="@klos">
         <meta name="twitter:creator"          content="@klos">
 
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Jan Klosowski",
+          "alternateName": "klos",
+          "url": "{{ site.url }}{{ site.baseurl }}",
+          "image": "https://janklosowski.com/img/thumbnail.png",
+          "description": "I build things and write about technology, markets, and surviving in the post-AI distopia.",
+          "jobTitle": "Builder & Writer",
+          "email": "{{ site.email }}",
+          "sameAs": [
+            "https://x.com/klos",
+            "https://janklosowski.substack.com/",
+            "https://t.me/janklosowski",
+            "https://www.linkedin.com/in/janklosowski",
+            "https://www.instagram.com/janklosowski/",
+            "https://github.com/{{ site.github_username }}"
+          ]
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ site.title }}",
+          "url": "{{ site.url }}{{ site.baseurl }}",
+          "description": "{{ site.description }}",
+          "author": {
+            "@type": "Person",
+            "name": "Jan Klosowski",
+            "alternateName": "klos"
+          }
+        }
+        </script>
+
         <title>{{ page.title | default: site.title }}</title>
 
         <!-- Other Links -->

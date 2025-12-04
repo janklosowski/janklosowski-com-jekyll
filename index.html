@@ -1,25 +1,59 @@
 ---
 layout: base
-bodyclass: 	homeview
+bodyclass: homeview
 ---
-
-<div class="side side--image"></div>
-<div class="side side--mask side--mask--1"></div>
-
-<div class="page home">
-  <h1 class="aboutme">Jan Klosowski</h1>
-  <div>I built <a href="https://deltabadger.com/" target="_blank" style="font-weight: 600;">Deltabadger</a>. I write about technology, markets, and staying a sovereign individual.</div>
-
-  <div><a href="https://dcacalculator.org/" target="_blank" style="font-weight: 600;">DCA calculator for stocks and crypto</a></div>
-  <div>NEW: <a href="https://etfcomparison.org/" target="_blank" style="font-weight: 600;">ETF & mutual fund comparison tool</a></div>
-
-  <div style="display: flex; flex-direction: column; gap: 1rem;">
-    <div class="substack-post-embed" style="overflow: hidden; border-radius: 0.75rem;"><p lang="en">Index Investing: When Everything is Better Than Dollars by Jan Klosowski</p><p>The Stock Market Became Your Savings Account, and It's a Problem</p><a data-post-link href="https://janklosowski.substack.com/p/index-investing-when-everything-is">Read on Substack</a></div><script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
-
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Real estate accounts for 62.4% of all assets.<br><br>What makes it particularly unique is that it stands closest to the money printer: 30-50% of new money arrives in the form of mortgage loans.<br><br>This creates a Cantillon effect that works for borrowers:<a href="https://t.co/6CJRyONXCn">https://t.co/6CJRyONXCn</a> <a href="https://t.co/dlBuDMyu4w">pic.twitter.com/dlBuDMyu4w</a></p>&mdash; klos (@klos) <a href="https://twitter.com/klos/status/1992305535342035047?ref_src=twsrc%5Etfw">November 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<header class="home-header">
+  <div class="signet">✦</div>
+  <h1>I'm Jan Klosowski (also known as <a href="https://x.com/klos" target="_blank">klos</a>). I build things and write about technology, markets, and surviving in the post-AI distopia.</h1>
+  <div class="sociallinks">
+    <a href="https://x.com/klos" rel="nofollow" target="_blank">x</a>
+    | <a href="https://janklosowski.substack.com/" rel="nofollow" target="_blank">substack</a>
+    | <a href="https://t.me/janklosowski" rel="nofollow" target="_blank">telegram</a>
+    | <a href="https://www.linkedin.com/in/janklosowski" rel="nofollow" target="_blank">linkedin</a>
+    | <a href="https://www.instagram.com/janklosowski/"  rel="nofollow" target="_blank">instagram</a>
+    <br>
   </div>
+</header>
+<main class="home-grid">
+  <article class="home-grid__tile">
+    <h2><a href="https://deltabadger.com/" target="_blank">Deltabadger</a></h2>
+    <p>A (soon) open-source dollar-cost averaging bot for crypto exchanges. Likely the best on the market.</p>
+    <p>As a SaaS, it helped thousands of users invest over $72M into digital assets. Now, since MiCA officially killed the business, I'm releasing the source code and the bot will be free to use.</p>
+  </article>
+  <article class="home-grid__tile">
+    <h2><a href="https://dcacalculator.org/" target="_blank">DCA Calculator</a></h2>
+    <p>It was quite surprising to me that this super popular concept was never done properly, and the most popular results on the internet were sometimes not even working anymore. There you have it:</p>
+    <p>The only dollar-cost averaging calculator for stocks, crypto, and whole portfolios. It also allows you to test rebalanced DCA and compare results against other assets.</p>
+  </article>
+  <article class="home-grid__tile">
+    <h2><a href="https://etfcomparison.org/" target="_blank">ETF Comparison</a></h2>
+    <p>A rather self-explanatory project I built in one of the November weekends.</p>
+    <p>The unique feature is that it compares not only lump sum investments in ETFs and Mutual Funds, but also dollar-cost averaging—which is how most people invest. I occasionally write human-generated commentaries on the most searched pairs.</p>
+  </article>
+  <article class="home-grid__tile">
+    <h2><a href="https://chartgenerator.org/" target="_blank">Chart Generator</a></h2>
+    <p>Anybody who follows me on <a href="https://x.com/klos" target="_blank">X</a> or reads my <a href="https://janklosowski.substack.com/" target="_blank">Substack</a> knows that I love charts. A few times someone asked me how I generate them. For a long time, I was manually crafting them in Figma. Not anymore.</p>
+    <p>This is really a tool I built for myself, but if you have feature requests, let me know (X is the best way these days).</p>
+  </article>
+  <article class="home-grid__tile">
+    <h2>Coming soon</h2>
+    <p>I try to build something new every week.</p>
+  </article>
+</main>
 
-  <div style="margin-top: 1rem">How I got here:</div>
+<section class="articles">
+  <h2 style="color:var(--faded)">Some other posts:</h2>
+
+  {% for post in site.posts %}
+    <a class="postlink" href="{{ post.url }}">
+      <time class="postlink__time">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <h2 class="postlink__title">{{ post.title }}</h2>
+    </a>
+  {% endfor %}
+</section>
+
+<footer class="home-footer">
+  <div style="margin-bottom: 3rem">How I got here:</div>
 
   <div class="ux-at">
     <a href="https://deltabadger.com/" target="_blank" style="color:var(--text); font-weight: 600;">
@@ -43,29 +77,4 @@ bodyclass: 	homeview
       <img src="/img/logo-bbh.svg" alt="BBH">
     </a>
   </div>
-
-  <div style="margin-top: 2rem">Other places to find me:</div>
-
-  <div class="sociallinks">
-    <!-- <span id="e142835588">[javascript protected email address]</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\".jHoNKPCuTgbSpr4yAvdDRYsVkX9x_+L580-F7WEMqz@Qc1emGtwiBnhJalOZU6f32I\";var b=a.split(\"\").sort().join(\"\");var c=\"@hnZq@ZptqnwihOhfOwGH@hB\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e142835588\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script>
-        |  -->
-        <a href="https://t.me/janklosowski"                rel="nofollow" target="_blank">telegram</a>
-        | <a href="https://www.linkedin.com/in/janklosowski" rel="nofollow" target="_blank">linkedin</a>
-        | <a href="https://www.instagram.com/janklosowski/"  rel="nofollow" target="_blank">instagram</a>
-        <br>
-  </div>
-
-  <!--
-  <main class="articles">
-    <h2 style="color:var(--faded)">Some other posts:</h2>
-
-    {% for post in site.posts %}
-      <a class="postlink" href="{{ post.url }}">
-        <time class="postlink__time">{{ post.date | date: "%Y-%m-%d" }}</time>
-        <h2 class="postlink__title">{{ post.title }}</h2>
-      </a>
-    {% endfor %}
-  </main>
-
-  -->
-</div>
+</footer>

@@ -286,6 +286,7 @@ pre,code,
   font-weight: normal
 .sociallinks
   line-height: 2rem
+  font-size: 0.75rem
 .category__header
   opacity: 1/$ratio
 
@@ -383,3 +384,34 @@ pre,code,
   margin: 0 auto -0.75vw
   @media only screen and (min-width: 1280px)
     margin-bottom: 0
+
+
+.signet
+  font-size: 3rem
+  margin-bottom: 2rem
+
+.home-header, .articles, .home-footer, .home-grid
+  max-width: 1280px
+  margin: 0 auto
+  padding: 2rem 2rem 0
+  @media only screen and (min-width: 768px)
+    padding: 5rem 5rem 0
+.home-header
+  h1
+    font-weight: normal
+    font-size: 1rem
+    margin-bottom: 1rem
+.home-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+  gap: 1rem
+  @media only screen and (min-width: 768px)
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    gap: 4rem
+  &__tile
+    h1
+      font-size: 1rem
+      margin-bottom: 1rem
+    p
+      font-size: 0.75rem
+      line-height: 1rem

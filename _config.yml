@@ -10,5 +10,9 @@ github_username: janklosowski
 # Build settings
 markdown: kramdown
 
+# Include static files
+include:
+  - robots.txt
+
 plugins:
   - jekyll-sitemap

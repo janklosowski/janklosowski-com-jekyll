@@ -2,6 +2,8 @@
 layout: page
 title: UX Design
 noindex: true
+permalink: /ux
+sitemap: false
 ---
 <div class="ux-top">
     <div class="ux-head">
@@ -16,7 +18,16 @@ noindex: true
 
     <p>Now, I'm happy to bring the same level of attention to detail to your product, and share 15 years of experience with your team.</p>
 
-    <p>Let's talk: <a href="mailto:ux@janklosowski.com">ux@janklosowski.com</a> or <a href="https://t.me/janklosowski" target="_blank" rel="noopener noreferrer">telegram</a></p>
+    <p>Let's talk: <span id="email-contact">ux@janklosowski.com</span> or <a href="https://t.me/janklosowski" target="_blank" rel="noopener noreferrer">telegram</a></p>
+    <script>
+      (function() {
+        var email = 'ux' + '@' + 'janklosowski.com';
+        var el = document.getElementById('email-contact');
+        if (el) {
+          el.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+        }
+      })();
+    </script>
     </div>
 </div>
 <img src="/img/ux00.avif" alt="Deltabadger" class="ux-image">

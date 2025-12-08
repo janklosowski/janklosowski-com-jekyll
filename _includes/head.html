@@ -15,7 +15,8 @@
         <meta property="og:image"             content="{% if page.thumblink %}https://janklosowski.com{{ page.thumblink }}{% else %}https://janklosowski.com/img/thumbnail.png{% endif %}">
         <meta property="og:image:width"       content="1200">
         <meta property="og:image:height"      content="630">
-        <meta property="og:url"               content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        {% assign canonical_url = page.url | replace:'index.html','' | replace:'.html','' | prepend: site.baseurl | prepend: site.url %}
+        <meta property="og:url"               content="{{ canonical_url }}">
         <meta property="og:site_name"         content="{{ site.title }}">
         
         <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -72,7 +73,7 @@
         <link rel="stylesheet"    href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet"    href="{{ '/css/main.css' | prepend: site.baseurl }}">
         <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
-        <link rel="canonical"     href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="canonical"     href="{{ canonical_url }}">
         <link rel="alternate"     href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml" title="{{ site.title }}">
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="G9hE0l3b36i8zhDAcC2hrQ" async></script>
     </head>

@@ -406,12 +406,14 @@ pre,code,
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
   gap: 1rem
   @media only screen and (min-width: 768px)
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
-    gap: 4rem
+    gap: 2rem
   &__tile
+    position: relative
     h1
       font-size: 1rem
       margin-bottom: 1rem
     p
       font-size: 0.75rem
       line-height: 1rem
+    img
+      width: 100%

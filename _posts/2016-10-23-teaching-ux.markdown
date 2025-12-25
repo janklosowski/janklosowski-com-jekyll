@@ -1,9 +1,10 @@
 ---
 layout: 	post
 title:  	"Thoughts on teaching UX"
-date:   	2016-10-23 09:00:00
+date:   	3000-10-23 09:00:00
 category: 	ux
 permalink: 	/teaching-ux/
+draf: true
 excerpt:	Teaching user experience is quite a challenge. First, you need to recognize that in the coming years, interfaces will be changing much faster. Common practices and patterns will be evolving and the UX roles and responsibilities will follow. But there is also a hope - I expect that the need for a good UXer will be increasing to not say inflating. The more technology – automation, AI, robots, VR… you name it – we will introduce to our life – the more we will value the human factor. The role of UX specialist will probably get more subtle but remain focused on basically easing all those interactions with every–day–more–abstract world around us.
 thumblink:	/img/ux-workshop.jpg
 tw-link:	https://twitter.com/klos/status/790452878917926914

@@ -2,25 +2,6 @@ $unit:       16px
 $lineheight: 1.5 * $unit
 $ratio:      1.61803398875
 
-@font-face
-  font-family: 'Roboto Mono'
-  font-style: normal
-  font-weight: 400
-  src: local('Roboto Mono Regular'), local('Roboto-Mono-Regular'), url(../fonts/RobotoMonoRegular.woff) format('woff')
-  font-display: swap
-@font-face
-  font-family: 'Roboto Mono'
-  font-style: italic
-  font-weight: 400
-  src: local('Roboto Mono Italic'), local('Roboto-Mono-Italic'), url(../fonts/RobotoMonoItalic.woff) format('woff')
-  font-display: swap
-@font-face
-  font-family: 'Roboto Mono'
-  font-style: normal
-  font-weight: 700
-  src: local('Roboto Mono Bold'), local('Roboto-Mono-Bold'), url(../fonts/RobotoMonoBold.woff) format('woff')
-  font-display: swap
-
 @media (prefers-color-scheme: light)
   html
     --background: #fff
@@ -139,8 +120,13 @@ html.dark-mode #theme-toggle
   .moon-icon
     display: none
 
+img
+  user-select: none
+
 html
-  
+  ::selection
+    background: #00f
+    color: #fff
   color: var(--text)
   background: var(--background)
 *
@@ -186,7 +172,7 @@ blockquote
   
 body
 p, ol, ul, h2, h3, h4,
-img, video, pre, code, figure,
+video, pre, code, figure,
 .post__time, .category
   margin-bottom: $ratio*1rem
 
@@ -196,7 +182,7 @@ code,
 h2,h3,h4,h5,
 pre,code,
 .aboutme
-  font-family: "Roboto Mono", monospace, sans-serif
+  font-family: "Inria Serif", serif
   font-size:   $unit
   line-height: 1em * $ratio
 
@@ -391,7 +377,11 @@ pre,code,
 .signet
   font-size: 3rem
   margin-bottom: 2rem
-
+  user-select: none
+  
+.articles
+  @media (max-width: 767.98px)
+    text-align: center
 .home-header, .articles, .home-footer, .home-grid
   max-width: 1280px
   margin: 0 auto
@@ -406,18 +396,32 @@ pre,code,
 .home-grid
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
-  gap: 1rem
   @media only screen and (min-width: 768px)
     gap: 2rem
   &__tile
     position: relative
+    overflow: hidden
     h1
       font-size: 1rem
       margin-bottom: 1rem
     p
-      font-size: 0.75rem
-      line-height: 1rem
+      font-size: 1rem
+      line-height: 1.25rem
+      margin: 0
+      @media (max-width: 767.98px)
+        text-align: center !important
     img
       width: 100%
-      border-radius: 0.25rem
-      box-shadow: 0.125rem 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.5)
+      border-radius: 0.5rem
+      transform: scale(0.7)
+      transition: transform 0.3s ease
+      @media (min-width: 768px)
+        transform: scale(0.7) translateX(-7%)
+      &:hover
+        transform: scale(0.75) translateX(-7%)
+
+
+
+.brand
+  font-size: 2rem
+  line-height: 1.5

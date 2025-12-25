@@ -1,7 +1,7 @@
 ---
 layout: 	 post
 title:  	 "Go home ICO. You're drunk."
-date:   	 2017-05-27 01:01:01
+date:   	 3017-05-27 01:01:01
 category:    cryptocurrencies
 permalink:   /go-home-ico/
 excerpt:	 I recognize the demand for new funding and investment mechanisms, and I’m quite excited about cryptocurrencies in general. That said, the initial coin offering (ICO), in the current form, is a terrible investment model that cannot work and will make more people bankrupts than millionaires.

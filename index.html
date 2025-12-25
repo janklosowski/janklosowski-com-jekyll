@@ -4,71 +4,40 @@ bodyclass: homeview
 ---
 <header class="home-header">
   <div class="signet">✦</div>
-  <h1>I'm Jan Klosowski (aka <a href="https://x.com/klos" target="_blank">klos</a>). I build things and write about stuff.</h1>
-  <div class="sociallinks">
-    <a href="https://x.com/klos" rel="nofollow" target="_blank">x</a>
-    | <a href="https://janklosowski.substack.com/" rel="nofollow" target="_blank">substack</a>
-    | <a href="https://t.me/janklosowski" rel="nofollow" target="_blank">telegram</a>
-    | <a href="https://www.linkedin.com/in/janklosowski" rel="nofollow" target="_blank">linkedin</a>
-    | <a href="https://www.instagram.com/janklosowski/"  rel="nofollow" target="_blank">instagram</a>
-    <br>
-  </div>
+  <hgroup class="brand">
+    <div>The work/safe/retire playbook is dead.</div>
+    <div>Switch from <em>earning</em> to <em>owning</em>.</div>
+    <div style="margin-top: 2rem; margin-bottom: 4rem">Read <a href="https://janklosowski.substack.com/p/the-window-manifesto-a-fire-for-the">The Window Manifesto →</a></div>
+  </hgroup>
 </header>
 
 <main class="home-grid">
   <article class="home-grid__tile">
     <a href="https://deltabadger.com/" target="_blank">
-    <img src="/img/bot.png" alt="DCA bot for crypto"></a>
-    <p><a href="https://deltabadger.com/" target="_blank">Deltabadger</a> is a dollar-cost averaging bot for crypto exchanges that as a SaaS helped thousands of users invest over <b>$72M</b> into digital assets. Now, since MiCA officially killed the business, I'm releasing the source code and the bot will be free to use.</p>
+    <img src="/img/bot.svg" alt="DCA bot for crypto"></a>
+    <p><a href="https://deltabadger.com/" target="_blank">Deltabadger</a> is a free DCA bot that deployed over $72M into digital assets</p>
   </article>
   <article class="home-grid__tile">
-    <a href="https://dcacalculator.org/" target="_blank"><img src="/img/dca.png" alt="DCA calculator for stocks, crypto, and whole portfolios"></a>
-    <p><a href="https://dcacalculator.org/" target="_blank">DCA Calculator</a> is the only dollar-cost averaging calculator for stocks, crypto, and whole portfolios. It also allows you to test rebalanced DCA and compare results against other assets.</p>
+    <a href="https://etfsavant.com/" target="_blank"><img src="/img/etf.svg" alt="ETF comparison tool for stocks, crypto, and whole portfolios"></a>
+    <p><a href="https://etfsavant.com/" target="_blank">ETF Savant</a> collects my personal research on ETFs and mutual funds</p>
   </article>
   <article class="home-grid__tile">
-    <a href="https://etfsavant.com/" target="_blank"><img src="/img/etf.png" alt="ETF comparison tool for stocks, crypto, and whole portfolios"></a>
-    <p><a href="https://etfsavant.com/" target="_blank">ETF Savant</a> is an ETF comparison tool where I collect personal research on ETFs and Mutual Funds on top of data collected by LLMs. The unique features are backtesting of DCA and detailed simulation of expense ratio impact.</p>
+    <a href="https://dcacalculator.org/" target="_blank"><img src="/img/dca.svg" alt="DCA calculator for stocks, crypto, and whole portfolios"></a>
+    <p>The only <a href="https://dcacalculator.org/" target="_blank">DCA Calculator</a> for stocks, crypto, and whole portfolios</p>
   </article>
+
   <article class="home-grid__tile">
-    <a href="https://chartgenerator.org/" target="_blank"><img src="/img/chart.png" alt="Chart generator for stocks, crypto, and whole portfolios"></a>
-    <p>Anybody who follows me on <a href="https://x.com/klos" target="_blank">X</a> or reads my <a href="https://janklosowski.substack.com/" target="_blank">Substack</a> knows that I love charts. A few times someone asked me how I generate them. For a long time, I was manually crafting them in Figma, but now I use this <a href="https://chartgenerator.org/" target="_blank">Chart Generator</a>.</p>
+    <a href="https://chartgenerator.org/" target="_blank"><img src="/img/chart.svg" alt="Chart generator for stocks, crypto, and whole portfolios"></a>
+    <p><a href="https://chartgenerator.org/" target="_blank">Chart Generator</a> I use for some of my <a href="https://x.com/klos" target="_blank">X</a> posts and <a href="https://janklosowski.substack.com/" target="_blank">Substack</a> articles</p>
   </article>
 </main>
 
-<footer class="home-footer">
-  <div style="margin-bottom: 3rem">How I got here:</div>
 
-  <div class="ux-at">
-    <a href="https://deltabadger.com/" target="_blank" style="color:var(--text); font-weight: 600;">
-      Now
-      <img src="/img/logo-deltabadger.svg" alt="DCA bot for crypto">
-    </a>
-    <a href="https://www.volt.io/" rel="nofollow" target="_blank">
-      2022
-      <img src="/img/logo-volt.svg" alt="Volt" style="transform: scale(1.05)">
-    </a>
-    <a href="https://zen.com/" rel="nofollow" target="_blank">
-      2020
-      <img src="/img/logo-zen.svg" alt="Zen">
-    </a>
-    <a href="https://ensoanalytics.com/" rel="nofollow" target="_blank">
-      2017
-      <img src="/img/logo-luna.svg" alt="Luna">
-    </a>
-    <a href="http://bbh.com/" rel="nofollow" target="_blank">
-      2015
-      <img src="/img/logo-bbh.svg" alt="BBH">
-    </a>
-  </div>
-</footer>
+<section class="articles" style="margin-bottom: 5rem; margin-top: 5rem">
 
-<section class="articles" style="margin-bottom: 5rem;">
-  <h2 style="color:var(--faded)">Some other posts:</h2>
+    <a href="https://janklosowski.substack.com/" rel="nofollow" target="_blank">substack</a>
+    | <a href="https://x.com/klos" rel="nofollow" target="_blank">x</a>
+    | <a href="https://t.me/janklosowski" rel="nofollow" target="_blank">telegram</a>
+    | <a href="https://www.linkedin.com/in/janklosowski" rel="nofollow" target="_blank">linkedin</a>
 
-  {% for post in site.posts %}
-    <a class="postlink" href="{{ post.url }}">
-      <time class="postlink__time">{{ post.date | date: "%Y-%m-%d" }}</time>
-      <h2 class="postlink__title">{{ post.title }}</h2>
-    </a>
-  {% endfor %}
 </section>

@@ -76,7 +76,6 @@ html.dark-mode
   .ux-image[src*="ux09.png"]
     content: url("/img/ux09-dark.png")
 
-
 .sun-icon, .moon-icon
   min-width: 10rem
   font-family: Inria Sans !important
@@ -84,14 +83,14 @@ html.dark-mode
 .moon-icon
   color: #fff
 
-
 // Toggle button icons for different modes
 html.dark-mode #theme-toggle
+  background: #0008 !important
   .sun-icon
     display: none
+    
   .moon-icon
     display: block
-    
 
 @media (prefers-color-scheme: dark)
   html:not(.light-mode) #theme-toggle
@@ -110,11 +109,13 @@ html.dark-mode #theme-toggle
   @media only screen and (min-width: 768px)
     bottom: 2rem
 
+
 #theme-toggle
-  background: var(--background)
-  border: 2px solid var(--text)
+  border: none
+  backdrop-filter: blur(10px) !important
+  background: #fff8
   border-radius: 2rem
-  padding: 0.5rem 1.5rem
+  padding: 0.4rem 1.5rem 0.6rem
   height: 3rem
   cursor: pointer
   display: flex
@@ -367,8 +368,10 @@ pre,code,
       margin: 1.6rem 1.6rem 0
       padding-bottom: 0.5rem
   a
-    color: color(display-p3 0 0.35 1)
+    color: color(display-p3 0 0 1)
     text-underline-offset: 0.15em
+    @media (prefers-color-scheme: dark)
+      color: color(display-p3 0 0.4 1)
 
 .ux-top
   font-family: Inria Sans

@@ -24,24 +24,24 @@ $ratio:      1.61803398875
   html:not(.light-mode) .ux-at
     img
       filter: invert(1) !important
-  html:not(.light-mode) .ux-image[src*="ux01.avif"]
-    content: url("/img/ux01-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux02.avif"]
-    content: url("/img/ux02-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux03.avif"]
-    content: url("/img/ux03-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux04.avif"]
-    content: url("/img/ux04-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux05.avif"]
-    content: url("/img/ux05-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux06.avif"]
-    content: url("/img/ux06-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux07.avif"]
-    content: url("/img/ux07-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux08.avif"]
-    content: url("/img/ux08-dark.avif")
-  html:not(.light-mode) .ux-image[src*="ux09.avif"]
-    content: url("/img/ux09-dark.avif")
+  html:not(.light-mode) .ux-image[src*="ux01.png"]
+    content: url("/img/ux01-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux02.png"]
+    content: url("/img/ux02-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux03.png"]
+    content: url("/img/ux03-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux04.png"]
+    content: url("/img/ux04-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux05.png"]
+    content: url("/img/ux05-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux06.png"]
+    content: url("/img/ux06-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux07.png"]
+    content: url("/img/ux07-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux08.png"]
+    content: url("/img/ux08-dark.png")
+  html:not(.light-mode) .ux-image[src*="ux09.png"]
+    content: url("/img/ux09-dark.png")
 
 // Manual dark mode override
 html.dark-mode
@@ -57,24 +57,33 @@ html.dark-mode
   .ux-at
     img
       filter: invert(1) !important
-  .ux-image[src*="ux01.avif"]
-    content: url("/img/ux01-dark.avif")
-  .ux-image[src*="ux02.avif"]
-    content: url("/img/ux02-dark.avif")
-  .ux-image[src*="ux03.avif"]
-    content: url("/img/ux03-dark.avif")
-  .ux-image[src*="ux04.avif"]
-    content: url("/img/ux04-dark.avif")
-  .ux-image[src*="ux05.avif"]
-    content: url("/img/ux05-dark.avif")
-  .ux-image[src*="ux06.avif"]
-    content: url("/img/ux06-dark.avif")
-  .ux-image[src*="ux07.avif"]
-    content: url("/img/ux07-dark.avif")
-  .ux-image[src*="ux08.avif"]
-    content: url("/img/ux08-dark.avif")
-  .ux-image[src*="ux09.avif"]
-    content: url("/img/ux09-dark.avif")
+  .ux-image[src*="ux01.png"]
+    content: url("/img/ux01-dark.png")
+  .ux-image[src*="ux02.png"]
+    content: url("/img/ux02-dark.png")
+  .ux-image[src*="ux03.png"]
+    content: url("/img/ux03-dark.png")
+  .ux-image[src*="ux04.png"]
+    content: url("/img/ux04-dark.png")
+  .ux-image[src*="ux05.png"]
+    content: url("/img/ux05-dark.png")
+  .ux-image[src*="ux06.png"]
+    content: url("/img/ux06-dark.png")
+  .ux-image[src*="ux07.png"]
+    content: url("/img/ux07-dark.png")
+  .ux-image[src*="ux08.png"]
+    content: url("/img/ux08-dark.png")
+  .ux-image[src*="ux09.png"]
+    content: url("/img/ux09-dark.png")
+
+
+.sun-icon, .moon-icon
+  min-width: 10rem
+  font-family: Inria Sans !important
+  
+.moon-icon
+  color: #fff
+
 
 // Toggle button icons for different modes
 html.dark-mode #theme-toggle
@@ -82,6 +91,7 @@ html.dark-mode #theme-toggle
     display: none
   .moon-icon
     display: block
+    
 
 @media (prefers-color-scheme: dark)
   html:not(.light-mode) #theme-toggle
@@ -92,15 +102,19 @@ html.dark-mode #theme-toggle
 // Dark mode toggle
 .dark-mode-toggle
   position: fixed
-  top: 1rem
-  right: 1rem
+  bottom: 1rem
+  width: 100vw
+  display: flex
+  justify-content: center
   z-index: 1000
+  @media only screen and (min-width: 768px)
+    bottom: 2rem
 
 #theme-toggle
   background: var(--background)
   border: 2px solid var(--text)
-  border-radius: 50%
-  width: 3rem
+  border-radius: 2rem
+  padding: 0.5rem 1.5rem
   height: 3rem
   cursor: pointer
   display: flex
@@ -357,6 +371,9 @@ pre,code,
     text-underline-offset: 0.15em
 
 .ux-top
+  font-family: Inria Sans
+  font-size: 1.25rem
+  line-height: 1.5rem
   background: url(/img/jan.png) no-repeat bottom right 7vw
   background-size: calc(240px + 14vw)
   margin-bottom: -1.5vw

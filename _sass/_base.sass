@@ -45,18 +45,33 @@ $ratio:      1.61803398875
 
 // Manual dark mode override
 html.dark-mode
-  --background: #000
+  --background: #020406
   --text: #ddd
   --blockquote: #999
   --faded: #555
   --link: color(display-p3 0.85 0 0)
   --button: #fff
+  a
+    color: #04f
   
   .side--mask--1
     filter: invert(1) !important
   .ux-at
     img
       filter: invert(1) !important
+
+  .ux-image[src*="ux01.svg"]
+    content: url("/img/ux01-dark.svg")
+  .ux-image[src*="ux02.svg"]
+    content: url("/img/ux02-dark.svg")
+  .ux-image[src*="ux03.svg"]
+    content: url("/img/ux03-dark.svg")
+  .ux-image[src*="ux04.svg"]
+    content: url("/img/ux04-dark.svg")
+
+  .ux-image[src*="volt02.svg"]
+    content: url("/img/volt02-dark.svg")
+
   .ux-image[src*="ux01.png"]
     content: url("/img/ux01-dark.png")
   .ux-image[src*="ux02.png"]
@@ -358,6 +373,9 @@ pre,code,
   max-width: 1280px !important
   margin: 0 auto
   padding: 1rem 0.5rem
+  display: flex
+  flex-direction: column
+  gap: 4rem
   @media only screen and (min-width: 1280px)
     padding: 2rem
   p
@@ -379,7 +397,7 @@ pre,code,
   line-height: 1.5rem
   background: url(/img/jan.png) no-repeat bottom right 7vw
   background-size: calc(240px + 14vw)
-  margin-bottom: -1.5vw
+  margin-bottom: -4rem
 .ux-head
   padding-bottom: calc(14rem + 15vw)
   @media only screen and (min-width: 1024px)
@@ -387,11 +405,14 @@ pre,code,
     max-width: 700px
     padding-bottom: 8rem
 .ux-image
-  border-radius: 1rem
   width: 100%
-  margin: 0 auto -0.75vw
-  @media only screen and (min-width: 1280px)
-    margin-bottom: 0
+  margin: 0 auto
+  &--border
+    border: 1px solid #0122
+  &--shadow
+    filter: drop-shadow(0.125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1))
+  &--radius
+    border-radius: 0.75rem !important
 
 
 .signet
@@ -430,15 +451,6 @@ pre,code,
       margin: 0
       @media (max-width: 767.98px)
         text-align: center !important
-    img
-      width: 100%
-      border-radius: 0.5rem
-      transform: scale(0.7)
-      transition: transform 0.3s ease
-      @media (min-width: 768px)
-        transform: scale(0.7) translateX(-7%)
-      &:hover
-        transform: scale(0.75) translateX(-7%)
 
 
 

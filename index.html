@@ -3,6 +3,7 @@ layout: base-homepage
 bodyclass: homeview
 ---
 <header class="home-header">
+  <canvas class="nightsky" aria-hidden="true"></canvas>
   <div class="signet">✦</div>
   <hgroup class="brand">
     <div>The work/save/retire playbook is dead.</div>
@@ -10,6 +11,96 @@ bodyclass: homeview
     <div style="margin-top: 2rem; margin-bottom: 2rem">Read <a href="https://sovereignoptimist.com/p/the-window-manifesto-a-fire-for-the">The Window Manifesto →</a></div>
   </hgroup>
 </header>
+
+<script>
+// Pixelart night sky for .home-header — two colours only: #00f sky, #fff stars/dither.
+(function () {
+  var header = document.querySelector('.home-header');
+  var canvas = header && header.querySelector('canvas.nightsky');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+
+  var BLUE = '#00f', WHITE = '#fff';
+  var CELL = 2.5;          // screen px per pixel-art block
+  var BAND = 0.21;          // bottom fraction that dissolves blue -> white
+  var STAR_DENSITY = 2;     // stars per 10,000 px² of sky (independent of CELL)
+  var FPS = 10;             // twinkle cadence (low fps = retro blink)
+
+  var cols = 0, rows = 0, bandStart = 0, dither = [], stars = [];
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function rand(a, b) { return a + Math.random() * (b - a); }
+
+  function build() {
+    var w = header.clientWidth, h = header.clientHeight;
+    if (!w || !h) return;
+    cols = Math.max(1, Math.round(w / CELL));
+    rows = Math.max(1, Math.round(h / CELL));
+    canvas.width = cols;
+    canvas.height = rows;
+    bandStart = Math.floor(rows * (1 - BAND));
+
+    // bottom scatter gradient: white-pixel odds rise (ease-in) to fully white at the edge
+    dither = [];
+    for (var y = bandStart; y < rows; y++) {
+      var t = (y - bandStart) / Math.max(1, rows - bandStart);
+      var p = t * t;
+      for (var x = 0; x < cols; x++) {
+        if (Math.random() < p) dither.push(y * cols + x);
+      }
+    }
+
+    // starfield in the clear sky above the band
+    stars = [];
+    var n = Math.floor(w * h * (1 - BAND) / 10000 * STAR_DENSITY);
+    for (var i = 0; i < n; i++) {
+      stars.push({
+        x: Math.floor(rand(0, cols)),
+        y: Math.floor(rand(0, bandStart)),
+        size: Math.random() < 0.08 ? 2 : 1,
+        phase: rand(0, Math.PI * 2),
+        speed: rand(0.175, 0.6),
+        thr: rand(-0.3, 0.55),
+        steady: Math.random() < 0.28
+      });
+    }
+  }
+
+  function draw(now) {
+    ctx.fillStyle = BLUE;
+    ctx.fillRect(0, 0, cols, rows);
+    ctx.fillStyle = WHITE;
+    for (var i = 0; i < dither.length; i++) {
+      var idx = dither[i];
+      ctx.fillRect(idx % cols, (idx / cols) | 0, 1, 1);
+    }
+    var t = now / 1000;
+    for (var s = 0; s < stars.length; s++) {
+      var st = stars[s];
+      var on = st.steady || reduce || Math.sin(t * st.speed + st.phase) > st.thr;
+      if (on) ctx.fillRect(st.x, st.y, st.size, st.size);
+    }
+  }
+
+  var last = 0;
+  function loop(now) {
+    if (now - last >= 1000 / FPS) { last = now; draw(now); }
+    requestAnimationFrame(loop);
+  }
+
+  function start() {
+    build();
+    if (reduce) draw(0);
+    else { last = 0; requestAnimationFrame(loop); }
+  }
+
+  var rt;
+  window.addEventListener('resize', function () {
+    clearTimeout(rt);
+    rt = setTimeout(start, 150);
+  });
+  start();
+})();
+</script>
 
 <main class="home-grid">
   <article class="home-grid__tile">
@@ -32,8 +123,8 @@ bodyclass: homeview
   </article>
 
   <article class="home-grid__tile">
-    <a href="https://chartgenerator.org/" target="_blank"><img src="/img/chart.svg" alt="Chart generator for stocks, crypto, and whole portfolios"></a>
-    <p><a href="https://chartgenerator.org/" target="_blank">Chart Generator</a> I use for some of my <a href="https://x.com/klos" target="_blank">X</a> posts and <a href="https://sovereignoptimist.com/" target="_blank">Substack</a> articles</p>
+    <a href="https://charts.sovereignoptimist.com/" target="_blank"><img src="/img/chart.svg" alt="Chart generator for stocks, crypto, and whole portfolios"></a>
+    <p><a href="https://charts.sovereignoptimist.com/" target="_blank">Chart Generator</a> I use for some of my <a href="https://x.com/klos" target="_blank">X</a> posts and <a href="https://sovereignoptimist.com/" target="_blank">Substack</a> articles</p>
   </article>
 </main>
 

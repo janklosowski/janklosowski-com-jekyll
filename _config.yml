@@ -14,5 +14,11 @@ markdown: kramdown
 include:
   - robots.txt
 
+# Repo files that must not be published
+exclude:
+  - AGENTS.md
+  - Gemfile
+  - Gemfile.lock
+
 plugins:
   - jekyll-sitemap

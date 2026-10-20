@@ -1,0 +1,12 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs><clipPath id="front"><rect x="200" y="180" width="200" height="100" transform="rotate(-18 292 180)"/></clipPath></defs>
+<g transform="translate(320 180) scale(1.4) translate(-320 -180)">
+<ellipse cx="292" cy="180" rx="60" ry="17" transform="rotate(-18 292 180)" stroke="#0000FF" stroke-width="8"/>
+<circle cx="292" cy="180" r="32" fill="#0000FF" stroke="white" stroke-width="6"/>
+<g clip-path="url(#front)">
+<ellipse cx="292" cy="180" rx="60" ry="17" transform="rotate(-18 292 180)" stroke="white" stroke-width="14"/>
+<ellipse cx="292" cy="180" rx="60" ry="17" transform="rotate(-18 292 180)" stroke="#0000FF" stroke-width="8"/>
+</g>
+<circle cx="396" cy="180" r="11" fill="#0000FF"/>
+</g>
+</svg>
